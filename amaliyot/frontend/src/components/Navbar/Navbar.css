@@ -1,0 +1,43 @@
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#131921;
+color:white;
+}
+
+.nav-logo a{
+color:white;
+font-size:22px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.nav-search{
+display:flex;
+gap:10px;
+}
+
+.nav-search input{
+padding:8px;
+width:300px;
+}
+
+.nav-search button{
+background:#febd69;
+border:none;
+padding:8px 12px;
+cursor:pointer;
+}
+
+.nav-menu{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.nav-menu a{
+color:white;
+text-decoration:none;
+}

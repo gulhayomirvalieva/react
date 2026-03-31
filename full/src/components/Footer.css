@@ -1,0 +1,13 @@
+/* Footer.css */
+
+footer {
+  background-color: #000000; /* bg-black */
+  color: #ffffff; /* text-white */
+  text-align: center; /* text-center */
+  padding-top: 1.5rem; /* py-6 */
+  padding-bottom: 1.5rem; /* py-6 */
+}
+
+footer p {
+  font-size: 1rem;
+}

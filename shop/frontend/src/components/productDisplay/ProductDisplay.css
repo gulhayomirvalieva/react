@@ -1,0 +1,135 @@
+.productdisplay {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px 100px;
+  font-family: Arial, sans-serif;
+}
+
+.productdisplay-left {
+  display: flex;
+  gap: 17px;
+}
+
+.productdisplay-img-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.productdisplay-img-list img {
+  width: 110px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.productdisplay-img-list img:hover {
+  transform: scale(1.05);
+}
+
+.productdisplay-main-img {
+  width: 400px;
+  height: 580px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.productdisplay-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.productdisplay-right h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.productdisplay-right-start {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: gold;
+  font-size: 18px;
+}
+
+.productdisplay-right-start p {
+  color: #555;
+  font-size: 14px;
+}
+
+.productdisplay-right-prices {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 20px;
+}
+
+.productdisplay-right-price-old {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.productdisplay-right-price-new {
+  color: #e94560;
+  font-weight: bold;
+}
+
+.productdisplay-right-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.productdisplay-right-size h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.productdisplay-right-size-options {
+  display: flex;
+  gap: 10px;
+}
+
+.productdisplay-right-size-options div {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.productdisplay-right-size-options div:hover {
+  background-color: #f5f5f5;
+}
+
+button {
+  width: 220px;
+  height: 35px;
+  background-color: #e94560;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #d3344c;
+}
+
+.productdisplay-right-category {
+  font-size: 14px;
+  color: #555;
+}
+
+.productdisplay-right-category span {
+  font-weight: bold;
+}

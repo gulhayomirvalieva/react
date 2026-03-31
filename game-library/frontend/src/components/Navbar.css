@@ -1,0 +1,108 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    gap: 82px;
+    background-color: rgba(10, 15, 60, 0.95);
+    backdrop-filter: blur(6px);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 0px 0px 75px 75px;
+}
+
+.bar h1 {
+    font-size: 30px;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bar :nth-child(1) {
+    width: 80px;
+    height: 50px;
+    color: red;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.2s;
+    font-family: sans-serif;
+}
+
+.profile a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.2s;
+    font-family: sans-serif;
+}
+
+.profile a:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+.nav a:hover {
+    color: #f40317;
+    transform: scale(1.1);
+
+}
+
+.nav p {
+    margin: 0;
+}
+
+
+.profile a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.profile :nth-child(2) {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.search input {
+    border: 2px solid transparent;
+    background: linear-gradient(#0A0A0A, #0A0A0A) padding-box, linear-gradient(150deg, #f90f02, #001aff) border-box;
+    border-radius: 12px;
+    padding: 12px;
+    color: white;
+    transition: 0.4s;
+    font-size: 15px;
+}
+
+.search input:focus {
+    background: linear-gradient(#0A0A0A, #0A0A0A) padding-box, linear-gradient(90deg, #00FFFF, #FF00FF, #00FFFF) border-box;
+    box-shadow: 0 0 15px #00FFFF;
+}
+
+.logout-btn {
+    background: transparent;
+    border: none;
+    color: #00ffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-btn:hover {
+    text-decoration: underline;
+}

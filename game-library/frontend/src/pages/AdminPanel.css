@@ -1,0 +1,261 @@
+/* 🔹 Umumiy sozlamalar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #3b0764);
+    color: white;
+}
+
+/* 🔹 Kirish sahifasi */
+.admin-code-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.code-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.code-box:hover {
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.5);
+}
+
+.code-box h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.code-box input {
+    padding: 12px 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 240px;
+    font-size: 16px;
+}
+
+.code-box button {
+    background: linear-gradient(90deg, #00ffff, #0077ff);
+    border: none;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0f172a;
+    transition: 0.3s;
+}
+
+.code-box button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(90deg, #0077ff, #00ffff);
+}
+
+.error {
+    color: #ff4444;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* 🔹 Asosiy admin panel */
+.admin-panel {
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* — Header */
+.admin-panel h1 {
+    text-align: center;
+    color: #00ffff;
+    text-shadow: 0 0 15px #00ffff55;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+/* — Qidiruv input */
+.top-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.top-controls input {
+    width: 300px;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 0 10px #00ffff55;
+    transition: all 0.3s;
+}
+
+.top-controls input:focus {
+    box-shadow: 0 0 15px #00ffffaa;
+}
+
+/* 🔹 Form */
+.admin-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.admin-form input {
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    min-width: 180px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.admin-form input:focus {
+    box-shadow: 0 0 8px #00ffff77;
+}
+
+.admin-form button {
+    background: linear-gradient(90deg, #00ffff, #0077ff);
+    color: #0f172a;
+    font-weight: bold;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.admin-form button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #0077ff, #00ffff);
+}
+
+/* 🔹 Jadval */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 14px 18px;
+    text-align: center;
+}
+
+.admin-table th {
+    background-color: rgba(0, 255, 255, 0.1);
+    color: #00ffff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.admin-table tr:hover {
+    background-color: rgba(0, 255, 255, 0.15);
+    transition: 0.3s;
+}
+
+/* 🔹 Tugmalar */
+.edit {
+    background: linear-gradient(90deg, #00ffff, #0077ff);
+    color: #0f172a;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.edit:hover {
+    transform: scale(1.08);
+    background: linear-gradient(90deg, #0077ff, #00ffff);
+}
+
+.delete {
+    background: linear-gradient(90deg, #ff4444, #ff0000);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.delete:hover {
+    transform: scale(1.08);
+    background: linear-gradient(90deg, #ff0000, #ff4444);
+}
+
+/* 🔹 Responsive */
+@media screen and (max-width: 768px) {
+    .admin-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-controls input {
+        width: 90%;
+    }
+
+    .admin-form input {
+        width: 90%;
+    }
+
+    .admin-form button {
+        width: 90%;
+    }
+}
+
+/* 🔹 Qidiruv input (Search bar) */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-container input {
+    width: 320px;
+    padding: 12px 15px 12px 40px;
+    /* chapga icon uchun joy */
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    background-image: url("data:image/svg+xml,%3Csvg fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 2a8 8 0 105.293 14.293l5.707 5.707 1.414-1.414-5.707-5.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-size: 20px 20px;
+}
+
+.search-container input::placeholder {
+    color: #a0a0a0;
+}
+
+.search-container input:focus {
+    box-shadow: 0 0 18px #00ffffaa;
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,31 @@
+/* Navbar.css */
+
+nav {
+  display: flex;
+  justify-content: space-between; /* justify-between */
+  padding: 1rem; /* p-4 */
+  background-color: #ffffff; /* bg-white */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+}
+
+nav .text-xl {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 700; /* font-bold */
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem; /* gap-6 */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Default color */
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #3182ce; /* hover color */
+}

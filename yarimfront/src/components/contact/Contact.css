@@ -1,0 +1,84 @@
+#contact {
+    width: 100%;
+    height: 180dvh;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: -180px;
+    background-image: linear-gradient(90deg, #21482C 33%, #2C8940 66%, #37C955 100%);
+    clip-path: polygon(0 14%, 100% 50, 100% 85%, 0 100%);   
+    /* padding-bottom: 200px;  */
+
+}
+
+#contact .contact {
+    width: 43%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+#contact .contact i {
+    gap: 40px;
+    margin-top: 28px;
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    
+}
+
+#contact div i p {
+    font-size: 19px;
+    font-weight: 200;
+}
+
+.icon_div{
+    gap: 20px;
+    width: 45%;
+    height: 20px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.contact .icon_div i {
+    width: 65px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: white;
+}
+
+.contact2 {
+    gap: 40px;
+    width: 43%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
+    align-items: center;
+    background: rgb(219, 218, 218);
+}
+
+.contact2 input {
+    width: 70%;
+    height: 70px;
+    border: none;
+    font-size: 20px;
+    color: red !important;
+    display: flex;
+    padding-left: 30px;
+    background-color: #37C955;   
+}
+
+.contact2 input:nth-child(4) {
+    width: 70%;
+    height: 140px;
+    border: none;   
+}

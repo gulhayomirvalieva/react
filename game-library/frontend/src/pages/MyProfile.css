@@ -1,0 +1,101 @@
+.profile-container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 16px;
+    background: #1e1e2f;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.profile-container h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00c6ff;
+    margin-bottom: 20px;
+}
+
+.no-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-form label {
+    text-align: left;
+    font-size: 14px;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #2a2a40;
+    color: #fff;
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.update-btn,
+.delete-btn {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.update-btn {
+    background: #00c6ff;
+    color: #fff;
+}
+
+.update-btn:hover {
+    background: #0094cc;
+}
+
+.delete-btn {
+    background: #ff3c3c;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background: #d63030;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #00c6ff;
+}

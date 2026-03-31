@@ -1,0 +1,92 @@
+/* 🔹 GameCard umumiy */
+.game-card {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: white;
+    border-radius: 16px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 255, 255, 0.4);
+}
+
+/* 🔹 Rasmlar */
+.game-card img {
+    width: 100%;
+    max-width: 220px;
+    height: 160px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.game-card img:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Sarlavha va matn */
+.game-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+.game-card p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+}
+
+/* 🔹 Tugmalar */
+.game-card button {
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.game-card button:hover {
+    transform: scale(1.05);
+}
+
+/* 🔹 Library tugmasi */
+.game-card button:nth-of-type(1) {
+    background-color: #00ffff;
+    color: #1e293b;
+}
+
+/* 🔹 Favorite tugmasi */
+.game-card button:nth-of-type(2) {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+/* 🔹 O'chirish tugmasi */
+.game-card button:nth-of-type(3) {
+    background-color: #ff4444;
+    color: white;
+}
+
+/* 🔹 Grid responsivligi (agar GameList.css da .games-grid bo'lsa) */
+@media (max-width: 768px) {
+    .game-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-card img {
+        max-width: 160px;
+    }
+}

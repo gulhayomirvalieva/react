@@ -1,0 +1,96 @@
+/* Umumiy konteyner */
+.register-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #001f3f, #2c003e);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Register box (shisha effektli kartochka) */
+.register-box {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 40px 50px;
+    width: 380px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Sarlavha */
+.register-box h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #00ffc8;
+    letter-spacing: 1px;
+}
+
+/* Inputlar */
+.register-box input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.register-box input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.register-box input:focus {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 10px #00ffc8;
+}
+
+/* Tugma */
+.register-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00ffc8, #00b8ff);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-box button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 255, 200, 0.5);
+}
+
+/* Xabar (muvaffaqiyat yoki xatolik) */
+.register-box p {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ff4f5a;
+    animation: fadeIn 0.4s ease;
+}
+
+/* Animatsiya */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

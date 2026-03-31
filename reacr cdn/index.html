@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>React CDN</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const title = "welcome to my website";
+      const subtitle = "this is a website to learning react";
+      // const address = "https://youtube.com/@akhhorweb";
+      const App = () => {
+        return (
+          <div className="app">
+            <h1>{title.toUpperCase()}</h1>
+            <h3>{subtitle}</h3>
+            <p>Today's date is: {new Date().toDateString()}</p>
+            <p>Random number: {Math.floor(Math.random() * 100)}</p>
+            <a href="https://youtube.com/@akhhorweb">My YouTube channel</a>
+            <button onClick={(e) => console.log(e)}>Click me</button>
+          </div>
+        );
+      };
+
+      const main = ReactDOM.createRoot(document.getElementById("root"));
+      main.render(<App />);
+    </script>
+  </body>
+</html>
+<!-- react js nima? -->
+<!-- react afzalliklari -->
+<!-- companent nima -->
+<!-- jsx nima -->

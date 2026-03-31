@@ -1,0 +1,217 @@
+/* style.css */
+
+/* Basic styles here... */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #f0f0f0;
+  font-size: 16px;
+}
+
+.form-group button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3a86ff;
+  color: #f0f0f0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+  background-color: #2566cc;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+.list li span {
+  font-size: 16px;
+  color: #f0f0f0;
+}
+
+.btns {
+  display: flex;
+  gap: 6px;
+}
+
+#done,
+#edit,
+#delete {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#done {
+  background-color: #28a745;
+  color: #f0f0f0;
+}
+
+#done:hover {
+  background-color: #218838;
+}
+
+#edit {
+  background-color: #ffc107;
+  color: #1f1f1f;
+}
+
+#edit:hover {
+  background-color: #e0a800;
+}
+
+#delete {
+  background-color: #dc3545;
+  color: #f0f0f0;
+}
+
+#delete:hover {
+  background-color: #c82333;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .form-group button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .list li {
+    padding: 10px;
+  }
+
+  .list li span {
+    font-size: 14px;
+  }
+
+  #done,
+  #edit,
+  #delete {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .form-group input,
+  .form-group button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list li span {
+    font-size: 14px;
+  }
+
+  .btns {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+
+  #done,
+  #edit,
+  #delete {
+    width: 30%;
+    padding: 6px;
+    font-size: 12px;
+  }
+}

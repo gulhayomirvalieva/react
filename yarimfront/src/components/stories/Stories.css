@@ -1,0 +1,78 @@
+#Stories{
+    width: 100%;
+    height: 190dvh;
+    background: #F2F2F2;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+}
+
+.Cameron {
+    /* gap: 20px; */
+    width: 85%;
+    height: 500px;
+    display: flex;
+    margin-top: 80px;
+}
+
+.Cameron img {
+    height: 100%;
+    margin-left: 15px;
+}
+
+.Cameron_div {
+    gap: 30px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    /* box-shadow: 0 0 5px black; */
+    justify-content: center;
+    background: white;
+    border: 1px solid rgb(196, 196, 196);
+    flex-direction: column;
+}
+
+.Cameron .Cameron_div img {
+    width: 35%;
+    height: 8%;
+}
+
+.Cameron .Cameron_div p{
+    width: 390px;
+    font-size: 18px;
+    margin-left: 35px;
+    line-height: 25px;
+}
+
+.Cameron .Cameron_div h1{
+    font-size: 30px;
+    margin-left: 35px;
+    line-height: 25px;
+}
+
+.Stor_span_div {
+    gap: 10px;
+    width: 12%;
+    height: 30px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Stor_span_div span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(57, 196, 57);
+}
+
+.Stor_span_div span:hover {
+    border: 3px solid blueviolet;
+}
+
+.Stor_span_div span:nth-child(3) {
+    background-color: green;
+}

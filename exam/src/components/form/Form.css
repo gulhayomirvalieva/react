@@ -1,0 +1,23 @@
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+form input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #2196f3; /* Moviy rang */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
